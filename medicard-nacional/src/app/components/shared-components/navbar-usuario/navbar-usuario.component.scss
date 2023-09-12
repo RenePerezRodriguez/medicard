@@ -1,0 +1,325 @@
+/* Estilos para móviles */
+@media (max-width: 767px) {
+  /* Agrega estilos para pantallas móviles */
+
+  .sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: whitesmoke;
+    padding: 20px;
+    position: fixed; /* Menú fijo en la pantalla */
+    top: 0; /* Colocar el menú en la parte superior */
+    left: 0; /* Colocar el menú en el extremo izquierdo */
+    overflow-y: auto;
+    display: none;
+  }
+  
+  .logo img {
+    width: 200px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 80px;
+  }
+  
+  .menu-label {
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 20px; /* Mayor margen vertical entre elementos del menú */
+
+  }
+  
+  .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Mayor margen vertical entre elementos del menú */
+  }
+  
+  .nav-item i {
+    margin-right: 10px;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px; /* Añadir un poco de espacio alrededor del enlace */
+    border-radius: 4px; /* Dar un aspecto de botón a los enlaces */
+    transition: background-color 0.2s ease;
+  }
+  
+  .nav-item a:hover {
+    background-color: #f0f0f0; /* Cambiar el color de fondo al pasar el cursor */
+  }
+  
+
+  /* help */
+  .help-container {
+    width: 100%;
+    height: 170px;
+    background: linear-gradient(to bottom right, #FF5733, #544ABB);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+  }
+  
+  .help-content {
+    text-align: center;
+  }
+  
+  .help-headline {
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+  }
+  
+  .help-body {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+  }
+  
+  .help-button {
+    width: 100%;
+    max-width: 200px;
+    height: 48px;
+    background-color: #FFFFFF;
+    color: #544ABB;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 20px;
+
+  }
+  
+  .help-button:hover {
+    background-color: #F0F0F0;
+  }
+  }
+
+/* Estilos para tabletas */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Agrega estilos para pantallas de tabletas */
+
+  .sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: whitesmoke;
+    padding: 20px;
+    position: fixed; /* Menú fijo en la pantalla */
+    top: 0; /* Colocar el menú en la parte superior */
+    left: 0; /* Colocar el menú en el extremo izquierdo */
+    overflow-y: auto;
+    display: none;
+  }
+  
+  .logo img {
+    width: 200px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 80px;
+  }
+  
+  .menu-label {
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 20px; /* Mayor margen vertical entre elementos del menú */
+
+  }
+  
+  .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Mayor margen vertical entre elementos del menú */
+  }
+  
+  .nav-item i {
+    margin-right: 10px;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px; /* Añadir un poco de espacio alrededor del enlace */
+    border-radius: 4px; /* Dar un aspecto de botón a los enlaces */
+    transition: background-color 0.2s ease;
+  }
+  
+  .nav-item a:hover {
+    background-color: #f0f0f0; /* Cambiar el color de fondo al pasar el cursor */
+  }
+  
+
+  /* help */
+  .help-container {
+    width: 100%;
+    height: 170px;
+    background: linear-gradient(to bottom right, #FF5733, #544ABB);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+  }
+  
+  .help-content {
+    text-align: center;
+  }
+  
+  .help-headline {
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+  }
+  
+  .help-body {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+  }
+  
+  .help-button {
+    width: 100%;
+    max-width: 200px;
+    height: 48px;
+    background-color: #FFFFFF;
+    color: #544ABB;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 20px;
+
+  }
+  
+  .help-button:hover {
+    background-color: #F0F0F0;
+  }
+  }
+
+/* Estilos para PCs */
+@media (min-width: 1024px) {
+  /* Agrega estilos para pantallas de PCs */
+
+  .sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: whitesmoke;
+    padding: 20px;
+    position: fixed; /* Menú fijo en la pantalla */
+    top: 0; /* Colocar el menú en la parte superior */
+    left: 0; /* Colocar el menú en el extremo izquierdo */
+    overflow-y: auto;
+  }
+  
+  .logo img {
+    width: 200px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 80px;
+  }
+  
+  .menu-label {
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 20px; /* Mayor margen vertical entre elementos del menú */
+
+  }
+  
+  .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Mayor margen vertical entre elementos del menú */
+  }
+  
+  .nav-item i {
+    margin-right: 10px;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px; /* Añadir un poco de espacio alrededor del enlace */
+    border-radius: 4px; /* Dar un aspecto de botón a los enlaces */
+    transition: background-color 0.2s ease;
+  }
+  
+  .nav-item a:hover {
+    background-color: #f0f0f0; /* Cambiar el color de fondo al pasar el cursor */
+  }
+  
+
+  /* help */
+  .help-container {
+    width: 100%;
+    height: 170px;
+    background: linear-gradient(to bottom right, #FF5733, #544ABB);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+  }
+  
+  .help-content {
+    text-align: center;
+  }
+  
+  .help-headline {
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+  }
+  
+  .help-body {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+  }
+  
+  .help-button {
+    width: 100%;
+    max-width: 200px;
+    height: 48px;
+    background-color: #FFFFFF;
+    color: #544ABB;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 20px;
+
+  }
+  
+  .help-button:hover {
+    background-color: #F0F0F0;
+  }
+  }
+
+  
+  

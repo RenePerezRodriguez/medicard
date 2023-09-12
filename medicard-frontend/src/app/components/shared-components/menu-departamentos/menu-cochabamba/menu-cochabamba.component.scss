@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 20px;
+    background-color: whitesmoke;
+    color: black;
+  }
+  
+  .navbar-left p {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-right a {
+    color: black;
+    font-size: 20px;
+    margin-left: 15px;
+    text-decoration: none;
+  }
+  
+  .red {
+    color: #FD6570;
+  }
+  .blue {
+    color: #44BEC5;
+  }

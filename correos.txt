@@ -1,0 +1,56 @@
+correo:  ceo@medicard.com.bo 
+
+contraseña: ceo@medicard
+
+
+correo:  cfernandez@medicard.com.bo
+
+contraseña: cfernandez@medicard
+
+
+correo:  consultas-medicas@medicard.com.bo
+
+contraseña: consultas-medicas@medicard
+
+
+correo:  contacto@medicard.com.bo
+
+contraseña: contacto@medicard
+
+
+correo:  
+gerencia-comercial@medicard.com.bo
+
+contraseña: 
+gerencia-comercial@medicard
+
+
+correo: gerencia-general@medicard.com.bo
+
+contraseña: gerencia-general@medicard
+
+
+correo: info@medicard.com.bo
+
+contraseña: info@medicard
+
+
+correo: marketing@medicard.com.bo
+
+contraseña: marketing@medicard
+
+
+
+correo: mediredes@medicard.com.bo
+
+contraseña: mediredes@medicard
+
+
+correo: robperrogon@medicard.com.bo
+
+contraseña: robperrogon@medicard
+
+
+correo: ventas@medicard.com.bo
+
+contraseña: ventas@medicard

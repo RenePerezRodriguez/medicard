@@ -1,0 +1,759 @@
+  /*Todo*/
+  
+  /* Animación de entrada suave para diferentes secciones */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Estilos para móviles */
+  @media (max-width: 767px) {
+    /* Agrega estilos para pantallas móviles */
+
+    /* Estilos generales */
+.container {
+  display: flex;
+  flex-direction: column; /* Cambia a dirección de columna */
+  align-items: center; /* Centra los elementos verticalmente */
+  margin-top: 80px;
+}
+
+.video-container {
+  position: relative;
+  max-width: 96%;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column; /* Cambia a dirección de columna */
+  align-items: center; /* Centra los elementos verticalmente */
+  padding: 30px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 20px; /* Añade margen superior */
+}
+
+.paragraph {
+  line-height: 1.8;
+  color: #fff;
+}
+
+.rounded-box {
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+  width: 100%;
+  position: relative;
+  text-align: left;
+  background-color: #EA2729;
+}
+
+.rounded-box::before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  background-color: #F4F4F4;
+}
+
+.red {
+  color: #EA2729;
+}
+
+.blue {
+  color: #42BAC1;
+}
+
+/* Sección de descuentos */
+.descuentos-section {
+  display: flex;
+  flex-direction: column; /* Cambia la dirección a columna en dispositivos móviles */
+  justify-content: center; /* Centra verticalmente los elementos */
+  align-items: center; /* Centra horizontalmente los elementos */
+  margin-top: 50px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.descuento-item {
+  width: 90%; /* Haz que los elementos ocupen todo el ancho */
+  margin: 20px 0; /* Añade margen arriba y abajo para separar los elementos */
+}
+
+/* Resto de los estilos se mantienen igual */
+.descuento-item:nth-child(odd) {
+  background-color: #EA2729;
+}
+
+.descuento-item:nth-child(even) {
+  background-color: #42BAC1;
+}
+
+.descuento-item .title {
+  color: white;
+}
+
+.descuento-item {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+}
+
+/* Sección "Sobre Nosotros" */
+.about-section {
+  padding: 13px;
+  margin-top: 50px; /* Reduce el margen superior para ajustar la posición del rectángulo rojo */
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.about-content {
+  display: flex;
+  margin-top: 200px;
+  flex-direction: column; /* Cambia la dirección a columna y pone blue debajo de red */
+  align-items: center;
+  gap: 10px;
+}
+
+.red-rectangle {
+  position: relative;
+  background-color: #EA2729;
+  width: 94%; /* Haz que ocupe todo el ancho disponible */
+  height: auto;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  color: whitesmoke;
+  animation: fadeInUp 1s ease-in-out;
+  margin-bottom: 20px; /* Agrega margen inferior para separar de blue */
+}
+
+.red-rectangle h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white; /* Cambia el color del título */
+}
+
+.red-rectangle p {
+  font-size: 16px;
+}
+
+.red-image {
+  position: absolute;
+  top: -300px;
+  right: 100px;
+  max-width: 500px;
+  z-index: -99;
+}
+
+.blue-rectangle {
+  background-color: #42BAC1; /* Cambia el color de fondo */
+  width: 94%; /* Haz que ocupe todo el ancho disponible */
+  color: whitesmoke;
+  border-radius: 10px;
+  padding: 20px;
+
+}
+
+/* Sección "Misión, Visión e Historia" */
+.mission-vision-history-section {
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+
+.mvh-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.mvh-item {
+  flex: 1;
+  text-align: center;
+  margin: 20px;
+  border: 0px solid #42BAC1;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s;
+  animation: fadeInUp 1s ease-in-out;
+  color: whitesmoke;
+  max-height: auto;
+}
+
+.mvh-item:nth-child(odd) {
+  background-color: #EA2729;
+}
+
+.mvh-item:nth-child(even) {
+  background-color: #42BAC1;
+}
+
+.mvh-item:hover {
+  transform: translateY(-5px);
+}
+
+.circle-icon {
+  display: inline-block;
+  color: white;
+  border-radius: 50%;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.mvh-item-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff; /* Cambiar el color del título si es necesario */
+}
+
+.mvh-item-description {
+  font-size: 18px;
+  font-style: italic;
+  color: #fff; /* Cambiar el color de la descripción si es necesario */
+}
+  }
+
+  /* Estilos para tabletas */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Agrega estilos para pantallas de tabletas */
+ 
+    /* Estilos generales */
+.container {
+  display: flex;
+  flex-direction: column; /* Cambia a dirección de columna */
+  align-items: center; /* Centra los elementos verticalmente */
+  margin-top: 80px;
+}
+
+.video-container {
+  position: relative;
+  max-width: 96%;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column; /* Cambia a dirección de columna */
+  align-items: center; /* Centra los elementos verticalmente */
+  padding: 30px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 20px; /* Añade margen superior */
+}
+
+.paragraph {
+  line-height: 1.8;
+  color: #fff;
+}
+
+.rounded-box {
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+  width: 100%;
+  position: relative;
+  text-align: left;
+  background-color: #EA2729;
+}
+
+.rounded-box::before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  background-color: #F4F4F4;
+}
+
+.red {
+  color: #EA2729;
+}
+
+.blue {
+  color: #42BAC1;
+}
+
+/* Sección de descuentos */
+.descuentos-section {
+  display: flex;
+  flex-direction: column; /* Cambia la dirección a columna en dispositivos móviles */
+  justify-content: center; /* Centra verticalmente los elementos */
+  align-items: center; /* Centra horizontalmente los elementos */
+  margin-top: 50px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.descuento-item {
+  width: 90%; /* Haz que los elementos ocupen todo el ancho */
+  margin: 20px 0; /* Añade margen arriba y abajo para separar los elementos */
+}
+
+/* Resto de los estilos se mantienen igual */
+.descuento-item:nth-child(odd) {
+  background-color: #EA2729;
+}
+
+.descuento-item:nth-child(even) {
+  background-color: #42BAC1;
+}
+
+.descuento-item .title {
+  color: white;
+}
+
+.descuento-item {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+}
+
+/* Sección "Sobre Nosotros" */
+.about-section {
+  padding: 13px;
+  margin-top: 50px; /* Reduce el margen superior para ajustar la posición del rectángulo rojo */
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.about-content {
+  display: flex;
+  margin-top: 200px;
+  flex-direction: column; /* Cambia la dirección a columna y pone blue debajo de red */
+  align-items: center;
+  gap: 10px;
+}
+
+.red-rectangle {
+  position: relative;
+  background-color: #EA2729;
+  width: 94%; /* Haz que ocupe todo el ancho disponible */
+  height: auto;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  color: whitesmoke;
+  animation: fadeInUp 1s ease-in-out;
+  margin-bottom: 20px; /* Agrega margen inferior para separar de blue */
+}
+
+.red-rectangle h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white; /* Cambia el color del título */
+}
+
+.red-rectangle p {
+  font-size: 16px;
+}
+
+.red-image {
+  position: absolute;
+  top: -300px;
+  right: 100px;
+  max-width: 500px;
+  z-index: -99;
+}
+
+.blue-rectangle {
+  background-color: #42BAC1; /* Cambia el color de fondo */
+  width: 94%; /* Haz que ocupe todo el ancho disponible */
+  color: whitesmoke;
+  border-radius: 10px;
+  padding: 20px;
+
+}
+
+/* Sección "Misión, Visión e Historia" */
+.mission-vision-history-section {
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+
+.mvh-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.mvh-item {
+  flex: 1;
+  text-align: center;
+  margin: 20px;
+  border: 0px solid #42BAC1;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s;
+  animation: fadeInUp 1s ease-in-out;
+  color: whitesmoke;
+  height: 350px;
+  max-height: auto;
+}
+
+.mvh-item:nth-child(odd) {
+  background-color: #EA2729;
+}
+
+.mvh-item:nth-child(even) {
+  background-color: #42BAC1;
+}
+
+.mvh-item:hover {
+  transform: translateY(-5px);
+}
+
+.circle-icon {
+  display: inline-block;
+  color: white;
+  border-radius: 50%;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.mvh-item-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff; /* Cambiar el color del título si es necesario */
+}
+
+.mvh-item-description {
+  font-size: 18px;
+  font-style: italic;
+  color: #fff; /* Cambiar el color de la descripción si es necesario */
+}
+  }
+
+  /* Estilos para PCs */
+  @media (min-width: 1024px) {
+    /* Agrega estilos para pantallas de PCs */
+
+
+/* Estilos generales */
+.container {
+  display: flex;
+  margin-top: 80px;
+}
+
+.video-container {
+  position: relative;
+  max-width: 50%;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff; /* Cambiar el color del título si es necesario */
+}
+
+.paragraph {
+  line-height: 1.8;
+  color: #fff; /* Cambiar el color del párrafo si es necesario */
+}
+
+.content-container {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rounded-box {
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+  width: 100%;
+  position: relative;
+  text-align: left;
+  background-color: #EA2729; /* Cambiar el color de fondo si es necesario */
+}
+
+.rounded-box::before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  background-color: #F4F4F4; /* Cambiar el color de fondo si es necesario */
+}
+
+.red {
+  color: #EA2729;
+}
+
+.blue {
+  color: #42BAC1;
+}
+
+/* Sección de descuentos */
+.descuentos-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.descuento-item:nth-child(odd) {
+  background-color: #EA2729;
+}
+
+.descuento-item:nth-child(even) {
+  background-color: #42BAC1;
+}
+
+.descuento-item .title{
+  color: white;
+}
+.descuento-item {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  margin: 20px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+}
+
+/* Sección "Sobre Nosotros" */
+.about-section {
+  padding: 13px;
+  margin-top: 150px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.red-rectangle {
+  position: relative;
+  background-color: #EA2729;
+  width: 700px;
+  height: auto;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  color: whitesmoke;
+  top: 60px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.red-rectangle h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.red-rectangle p {
+  font-size: 16px;
+}
+
+.red-image {
+  position: absolute;
+  top: -300px;
+  right: 100px;
+  max-width: 500px;
+  z-index: -99;
+}
+
+.blue-rectangle {
+  display: flex;
+  align-items: center;
+  background-color: #42BAC1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  width: 700px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.blue-image {
+  max-width: auto;
+  height: 250px;
+  margin-right: 10px;
+}
+
+.blue-text {
+  flex: 1;
+}
+
+.blue-text h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.blue-text p {
+  font-size: 16px;
+}
+
+/* Sección "Misión, Visión e Historia" */
+.mission-vision-history-section {
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+
+.mvh-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.mvh-item {
+  flex: 1;
+  text-align: center;
+  margin: 20px;
+  border: 0px solid #42BAC1;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s;
+  animation: fadeInUp 1s ease-in-out;
+  color: whitesmoke;
+  max-height: auto;
+}
+
+.mvh-item:nth-child(odd) {
+  background-color: #EA2729;
+}
+
+.mvh-item:nth-child(even) {
+  background-color: #42BAC1;
+}
+
+.mvh-item:hover {
+  transform: translateY(-5px);
+}
+
+.circle-icon {
+  display: inline-block;
+  color: white;
+  border-radius: 50%;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.mvh-item-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff; /* Cambiar el color del título si es necesario */
+}
+
+.mvh-item-description {
+  font-size: 18px;
+  font-style: italic;
+  color: #fff; /* Cambiar el color de la descripción si es necesario */
+}
+
+  }
+  
+  
+  
+
+

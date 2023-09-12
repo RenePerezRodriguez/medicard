@@ -1,0 +1,158 @@
+
+  .home-content {
+    display: flex;
+  }
+  
+  .cream-bg {
+    background-color: #F5EFEA;
+  }
+  
+  .lilac-bg {
+    background-color: #C5A6E3;
+    //background-color: #44BEC5;
+
+  }
+
+/* Estilos generales para la columna */
+.column {
+  flex: 1;
+  height: 800px; /* Altura razonable */  
+}
+
+/* Estilos para cada departamento */
+.lilac-bg {
+  background-color: #00BFA6; /* Color para Chuquisaca */
+}
+  
+ /* contenido principal */
+
+/* Resto del CSS que ya habías proporcionado */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alineación a la izquierda */
+    height: 80%; /* Para que ocupe toda la altura de la columna */
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  .content h2 {
+    margin-bottom: 60px;
+    font-size: 50px;
+  }
+  .red {
+    color: #FD6570;
+  }
+  .blue {
+    color: #44BEC5;
+  }
+  .content p {
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+  .p-b {
+    font-size: 13px;
+    color: #44BEC5;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .content button {
+    padding: 10px 20px;
+    background-color: #44BEC5;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #44BEC5;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+
+  
+  
+
+  .associates-container {
+    max-width: 1000px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto; /* Centra la sección horizontalmente */
+    padding: 20px;
+  }
+  
+  .swiper-slide img {
+    width: 200px; /* Ajusta el tamaño de los logos según tus necesidades */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centra los logos horizontalmente */
+  }
+
+  
+  
+  
+
+
+
+  .beneficios-container {
+    text-align: center;
+    //max-width: 1300px;
+    margin: 0 auto;
+  }
+  
+  .beneficios-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .beneficios-subtitle {
+    color: #999;
+    margin-bottom: 30px;
+  }
+  
+  .beneficios-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .beneficios-item {
+    width: 48%;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .beneficios-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #44BEC5;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .beneficios-list-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .beneficios-list-description {
+    font-size: 14px;
+  }
+  

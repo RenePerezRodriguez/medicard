@@ -1,0 +1,128 @@
+
+/* Contenedor principal */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* Encabezado del formulario */
+h2 {
+    text-align: center;
+}
+
+/* Grupos de campos */
+.form-group {
+    margin: 30px;
+}
+
+/* Etiqueta de campo */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Campos de entrada de datos */
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Estilo al enfocar los campos de entrada */
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus {
+    border-color: #42BAC1;
+}
+
+/* Botón de envío */
+.btn-primary {
+    background-color: #42BAC1;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+/* Campo de términos y condiciones */
+.form-group.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para el checkbox */
+.form-group.checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Estilos al pasar el ratón sobre el botón */
+.btn-primary:hover {
+    background-color: #42BAC1;
+}
+
+/* Estilos para las columnas */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .column {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Estilo para el grupo de términos y condiciones */
+.terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la etiqueta de los términos y condiciones */
+.terms label {
+    flex: 1;
+    font-weight: bold;
+    color: #555;
+    line-height: 1.5;
+    display: flex;
+    align-items: center; /* Alinea verticalmente el texto con el checkbox */
+}
+
+/* Estilo para el checkbox de los términos y condiciones */
+.terms input[type="checkbox"] {
+    margin-top: 0; /* Elimina el margen superior para alinear el checkbox verticalmente */
+    margin-right: 5px; /* Ajusta el espacio entre el checkbox y el texto */
+}
+

@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #FAFBFC;
+    font-family: 'IBM Sans', sans-serif;
+  }
+
+/* Fuente para encabezados */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IBM Sans', Arial, sans-serif;
+}
+
+/* Tamaños de fuente para encabezados */
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 28px;
+}
+
+h6 {
+  font-size: 24px;
+}
+
+/* Fuente para párrafos y contenido del cuerpo */
+p {
+  font-family: 'IBM Sans', Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* Tamaño de fuente para botones */
+button, .button {
+  font-family: 'IBM Sans', Arial, sans-serif;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos de botones */
+.primary-button {
+  background-color: #43BFC7;
+  color: white;
+}
+
+.secondary-button {
+  background-color: #E7282A;
+  color: white;
+}
+
+/* Otros estilos de párrafos */
+.small-paragraph {
+  font-size: 18px;
+}

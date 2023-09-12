@@ -1,0 +1,512 @@
+
+  /* Estilos para móviles */
+  @media (max-width: 767px) {
+    /* Agrega estilos para pantallas móviles */
+
+    .home-container {
+      margin: 10px;
+}
+
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+  }
+  
+  .cream-bg {
+    background-color: #E7282A;
+    color: whitesmoke !important;
+    margin-bottom: 10px;
+  }
+  
+  .lilac-bg {
+    background-color: #C5A6E3;
+    //background-color: #44BEC5;
+
+  }
+
+/* Estilos generales para la columna */
+.column {
+  flex: 1;
+  padding: 20px;
+}
+
+.lilac-bg {
+    background: linear-gradient(to bottom, #44BEC5, #44BEC5 50%, white 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .centered-video {
+    max-width: 80%;
+    max-height: 90%;
+  }
+
+  /* contenido principal */
+
+/* Resto del CSS que ya habías proporcionado */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Alineación a la izquierda */
+  height: 80%; /* Para que ocupe toda la altura de la columna */
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+.red {
+  color: #FD6570;
+}
+.blue {
+  color: #44BEC5;
+}
+
+.p-b {
+  color: #44BEC5;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.content button {
+  padding: 10px 20px;
+  background-color: #44BEC5;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #44BEC5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.associates-container {
+  max-width: 1000px; /* Ajusta el ancho máximo según tus necesidades */
+  margin: 0 auto; /* Centra la sección horizontalmente */
+  padding: 20px;
+}
+
+.swiper-slide img {
+  width: 200px; /* Ajusta el tamaño de los logos según tus necesidades */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centra los logos horizontalmente */
+}
+
+
+
+
+
+
+
+.beneficios-container {
+  text-align: center;
+  //max-width: 1300px;
+  margin: 0 auto;
+}
+
+.beneficios-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.beneficios-subtitle {
+  color: #999;
+  margin-bottom: 30px;
+}
+
+.beneficios-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.beneficios-item {
+  width: 48%;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.beneficios-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  color: #44BEC5;
+  border-radius: 50%;
+  line-height: 40px;
+  margin-bottom: 10px;
+  font-size: 50px;
+  align-content: center;  
+}
+
+.beneficios-list-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.beneficios-list-description {
+}
+  
+  
+  }
+
+  /* Estilos para tabletas */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Agrega estilos para pantallas de tabletas */
+
+    .home-container {
+      margin: 10px;
+}
+
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+  }
+  
+  .cream-bg {
+    background-color: #E7282A;
+    color: whitesmoke !important;
+    margin-bottom: 10px;
+  }
+  
+  .lilac-bg {
+    background-color: #C5A6E3;
+    //background-color: #44BEC5;
+
+  }
+
+/* Estilos generales para la columna */
+.column {
+  flex: 1;
+  padding: 20px;
+}
+
+.lilac-bg {
+    background: linear-gradient(to bottom, #44BEC5, #44BEC5 50%, white 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .centered-video {
+    max-width: 80%;
+    max-height: 90%;
+  }
+
+  /* contenido principal */
+
+/* Resto del CSS que ya habías proporcionado */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Alineación a la izquierda */
+  height: 80%; /* Para que ocupe toda la altura de la columna */
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+.red {
+  color: #FD6570;
+}
+.blue {
+  color: #44BEC5;
+}
+
+.p-b {
+  color: #44BEC5;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.content button {
+  padding: 10px 20px;
+  background-color: #44BEC5;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #44BEC5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.associates-container {
+  max-width: 1000px; /* Ajusta el ancho máximo según tus necesidades */
+  margin: 0 auto; /* Centra la sección horizontalmente */
+  padding: 20px;
+}
+
+.swiper-slide img {
+  width: 200px; /* Ajusta el tamaño de los logos según tus necesidades */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centra los logos horizontalmente */
+}
+
+
+
+
+
+
+
+.beneficios-container {
+  text-align: center;
+  //max-width: 1300px;
+  margin: 0 auto;
+}
+
+.beneficios-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.beneficios-subtitle {
+  color: #999;
+  margin-bottom: 30px;
+}
+
+.beneficios-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.beneficios-item {
+  width: 48%;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.beneficios-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  color: #44BEC5;
+  border-radius: 50%;
+  line-height: 40px;
+  margin-bottom: 10px;
+  font-size: 50px;
+  align-content: center;  
+}
+
+.beneficios-list-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.beneficios-list-description {
+}
+  
+  }
+
+  /* Estilos para PCs */
+  @media (min-width: 1024px) {
+    /* Agrega estilos para pantallas de PCs */
+
+
+.home-container {
+  margin-right: -100px !important;
+  margin-left: 190px !important;
+}
+
+
+.home-content {
+    display: flex;
+  }
+  
+  .cream-bg {
+    background-color: #E7282A;
+    color: whitesmoke !important;
+  }
+  
+  .lilac-bg {
+    background-color: #C5A6E3;
+    //background-color: #44BEC5;
+
+  }
+
+/* Estilos generales para la columna */
+.column {
+  flex: 1;
+  height: 800px; /* Altura razonable */  
+  padding-top: 50px;
+}
+
+.lilac-bg {
+    background: linear-gradient(to bottom, #44BEC5, #44BEC5 50%, white 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .centered-video {
+    max-width: 80%;
+    max-height: 90%;
+  }
+  
+  
+  
+ /* contenido principal */
+
+/* Resto del CSS que ya habías proporcionado */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alineación a la izquierda */
+    height: 80%; /* Para que ocupe toda la altura de la columna */
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+ 
+  .red {
+    color: #FD6570;
+  }
+  .blue {
+    color: #44BEC5;
+  }
+ 
+  .p-b {
+    color: #44BEC5;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .content button {
+    padding: 10px 20px;
+    background-color: #44BEC5;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #44BEC5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+
+  
+  
+
+  .associates-container {
+    max-width: 1000px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto; /* Centra la sección horizontalmente */
+    padding: 20px;
+  }
+  
+  .swiper-slide img {
+    width: 200px; /* Ajusta el tamaño de los logos según tus necesidades */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centra los logos horizontalmente */
+  }
+
+  
+  
+  
+
+
+
+  .beneficios-container {
+    text-align: center;
+    //max-width: 1300px;
+    margin: 0 auto;
+  }
+  
+  .beneficios-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .beneficios-subtitle {
+    color: #999;
+    margin-bottom: 30px;
+  }
+  
+  .beneficios-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .beneficios-item {
+    width: 48%;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .beneficios-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: #44BEC5;
+    border-radius: 50%;
+    line-height: 40px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    align-content: center;  
+}
+  
+  .beneficios-list-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .beneficios-list-description {
+  }
+  
+
+}
+

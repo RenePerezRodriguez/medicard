@@ -1,0 +1,29 @@
+<nav class="navbar">
+    <div class="navbar-left">
+        <a routerLink="/">
+            <img src="./../../../../assets/logos/logo-medicard.png" alt="Logo">
+        </a>
+    </div>
+    <div class="navbar-center">
+        
+    </div>
+    <div class="navbar-right">
+        <select>
+            <ng-container *ngFor="let ciudad of ciudades">
+                <option [value]="ciudad.value" [routerLink]="ciudad.routerLink">{{ ciudad.label }}</option>
+            </ng-container>
+        </select>
+        
+        <div class="ciudades-registrarse">
+            <a class="a-usuario" routerLink="/home-usuario">Usuarios</a>
+            <a class="a-usuario-r" routerLink="/registro-usuario">Regístrate</a>
+        </div>
+        <div class="trabaja-con-nosotros">
+            <select>
+                <option value="" routerLink="/trabaja-con-nosotros">Trabaja con Nosotros</option>
+                <option value="instituciones">Instituciones</option>
+                <option value="ejecutivos">Ejecutivos</option>
+            </select>
+        </div>
+    </div>
+</nav>

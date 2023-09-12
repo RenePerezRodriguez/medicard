@@ -1,0 +1,27 @@
+<footer class="footer" [ngClass]="{'with-margin': isHomeUsuario}">
+      <div class="statistics-section" (window:scroll)="checkStatsInView($event)">
+        <div class="statistic" *ngFor="let stat of statistics" [id]="stat.title">
+          <i class="fa" [ngClass]="stat.iconClass"></i>
+          <h3 class="number-increment">{{ stat.numberToShow }}</h3>
+          <p>{{ stat.title }}</p>
+        </div>
+      </div>
+      
+
+    
+    <div class="contact-form-section">
+      <div class="contact-info">
+        <h3>Contacto</h3>
+        <p>Si tienes alguna pregunta o necesitas asistencia, no dudes en contactarnos.</p>
+        <p><i class="fa fa-envelope"></i> contacto@medicard.com.bo</p>
+        <p><i class="fa fa-phone"></i> +591 77484800</p>
+      </div>
+      <div class="contact-form">
+        <h3>Contáctanos</h3>
+        <form action="#">
+          <input type="email" placeholder="Email">
+          <button type="submit">Suscribete</button>
+        </form>
+      </div>
+    </div>
+  
