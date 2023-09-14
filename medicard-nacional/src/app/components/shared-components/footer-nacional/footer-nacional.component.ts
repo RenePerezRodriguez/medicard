@@ -8,9 +8,7 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class FooterNacionalComponent implements OnInit {
   statistics: any[] = [
-    { title: 'Número de Tarjetas Vendidas', number: 1500000, iconClass: 'fa-credit-card' },
     { title: 'Número de Clínicas Asociadas', number: 300, iconClass: 'fa-hospital' },
-    { title: 'Años Trabajando', number: 10, iconClass: 'fa-clock' },
     { title: 'Empresas e Instituciones', number: 500, iconClass: 'fa-bar-chart' },
     { title: 'Ejecutivos de ventas', number: 1000, iconClass: 'fa-users' }
   ];

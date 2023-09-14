@@ -1,29 +1,31 @@
 <nav class="navbar">
     <div class="navbar-left">
-        <a routerLink="/">
-            <img src="./../../../../assets/logos/logo-medicard.png" alt="Logo">
-        </a>
-    </div>
-    <div class="navbar-center">
-        
+      <a routerLink="/">
+        <img src="./../../../../assets/logos/logo-medicard.png" alt="Logo">
+      </a>
+      
+      <!-- Botón de hamburguesa -->
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" id="hamburger-icon">&#9776;</div>
+      </div>
+      
+      <ul class="menu">
+        <li><a routerLink="">Home</a></li>
+        <li id="beneficios-ciudades"><a routerLink="/beneficios">Beneficios Ciudades</a>
+            <ul class="submenu">
+              <li *ngFor="let ciudad of ciudades">
+                <a [routerLink]="ciudad.value">Beneficios de {{ ciudad.label }} </a>
+              </li>
+            </ul>
+          </li>
+          
+        <li><a routerLink="/trabaja-con-nosotros">Trabaja con Nosotros (Instituciones & Ejecutivos)</a></li>
+        <li><a routerLink="/contacto">Contacto</a></li>
+      </ul>
     </div>
     <div class="navbar-right">
-        <select>
-            <ng-container *ngFor="let ciudad of ciudades">
-                <option [value]="ciudad.value" [routerLink]="ciudad.routerLink">{{ ciudad.label }}</option>
-            </ng-container>
-        </select>
-        
-        <div class="ciudades-registrarse">
-            <a class="a-usuario" routerLink="/home-usuario">Usuarios</a>
-            <a class="a-usuario-r" routerLink="/registro-usuario">Regístrate</a>
-        </div>
-        <div class="trabaja-con-nosotros">
-            <select>
-                <option value="" routerLink="/trabaja-con-nosotros">Trabaja con Nosotros</option>
-                <option value="instituciones">Instituciones</option>
-                <option value="ejecutivos">Ejecutivos</option>
-            </select>
-        </div>
+      <a class="btn-registrarse" routerLink="/registro-usuario">Regístrate</a>
+      <a class="btn-usuario" routerLink="/home-usuario">Usuarios</a>
     </div>
-</nav>
+  </nav>
+  

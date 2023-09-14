@@ -1,0 +1,116 @@
+.container {
+    display: flex;
+    margin-top: 80px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .paragraph {
+    line-height: 2.5;
+  }
+  
+  .content-container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .red {
+    color: #FD6570;
+  }
+  .blue {
+    color: #42BAC1;
+  }
+  
+  .main-content {
+    background-color: #42bbc123;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .solid-section {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .rectangles-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .rectangle {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 340px;
+    margin: 20px;
+    text-align: left;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 0 10px 10px 0;
+    color: black;
+  }
+  
+  .rectangle img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .pdf-button {
+    background-color: #42BAC1;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Cambiado de "center" a "space-between" */
+  }
+  
+  
+  .pdf-button:hover {
+    background-color: #005FAB;
+  }
+  
+  /* Estilos para los íconos de redes sociales y WhatsApp */
+  .social-icons {
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    gap: 10px; /* Espacio entre los iconos */
+  }
+  
+  .social-icons a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+  }
+  
+  .social-icons i {
+    font-size: 24px;
+    color: #0077B5; /* Color predeterminado de los íconos */
+  }
+  
+  .social-icons i.fa-facebook {
+    color: #1877F2; /* Color de Facebook */
+  }
+  
+  .social-icons i.fa-instagram {
+    color: #E4405F; /* Color de Instagram */
+  }
+  
+  .social-icons i.fa-whatsapp {
+    color: #25D366; /* Color de WhatsApp */
+  }
+  

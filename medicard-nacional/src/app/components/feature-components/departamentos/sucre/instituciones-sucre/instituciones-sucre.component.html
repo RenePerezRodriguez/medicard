@@ -1,77 +1,31 @@
 <div class="main-content">
-    <!-- Sección con color sólido -->
-    <div class="solid-section">
-      <h2 class="title" >Conoce Nuestras Instituciones en Sucre</h2>
-      <p>Los mejores descuentos te los ofrece nuestras instituciones</p>
-    </div>
-  
-    <!-- Sección de rectángulos -->
-    <div class="rectangles-section">
-        <div class="rectangle">
-            <!-- Contenido del rectángulo -->
-            <img src="./../../../../../../assets/instituciones/cbba/" alt="Foto 1">
-            <p class="gray-text">Clinica</p>
-            <h2>OncoClinic</h2>
-            <p>Descripción del Rectángulo 1.</p>
-            <!-- Agrega iconos de redes sociales y teléfono -->
-            <div class="social-icons">
-              <a class="pdf-button modal-link" href="https://medicard.com.bo/archivos/sucre/ONCOCLINIC.pdf">Abrir PDF</a>
+  <!-- Sección con color sólido -->
+  <div class="solid-section">
+    <h2 class="title" >Conoce Nuestras Instituciones en Sucre</h2>
+    <p>Los mejores descuentos te los ofrece nuestras instituciones</p>
+  </div>
 
-              <a href="https://www.facebook.com/CAO-Cl%C3%ADnica-123456789" target="_blank">
-                <i class="fab fa-facebook"></i>
-              </a>
-              <a href="https://www.instagram.com/caoclinica" target="_blank">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="https://wa.me/77484800" target="_blank">
-                <i class="fas fa-phone"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="rectangle">
-            <img src="./../../../../../../assets/instituciones/cbba/" alt="Foto 1">
-            <p class="gray-text">Hospital</p>
-            <h2>Arco Iris</h2>
-            <p>Descripción del Rectángulo 1.</p>
-            <!-- Agrega iconos de redes sociales y teléfono -->
-            <div class="social-icons">
-              <a class="pdf-button modal-link" href="https://medicard.com.bo/archivos/sucre/ARCOIRIS.pdf" target="_blank">Abrir PDF</a>
-
-              <a href="https://www.facebook.com/CAO-Cl%C3%ADnica-123456789" target="_blank">
-                <i class="fab fa-facebook"></i>
-              </a>
-              <a href="https://www.instagram.com/caoclinica" target="_blank">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="https://wa.me/77484800" target="_blank">
-                <i class="fas fa-phone"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="rectangle">
-            <img src="./../../../../../../assets/instituciones/cbba/" alt="Foto 1">
-            <p class="gray-text">Clinica</p>
-            <h2>Clinica Angeles</h2>
-            <p>Descripción del Rectángulo 1.</p>
-            <!-- Agrega iconos de redes sociales y teléfono -->
-            <div class="social-icons">
-              <a class="pdf-button modal-link" href="https://medicard.com.bo/archivos/sucre/losangeles.pdf" target="_blank">Abrir PDF</a>
-
-              <a href="https://www.facebook.com/CAO-Cl%C3%ADnica-123456789" target="_blank">
-                <i class="fab fa-facebook"></i>
-              </a>
-              <a href="https://www.instagram.com/caoclinica" target="_blank">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="https://wa.me/77484800" target="_blank">
-                <i class="fas fa-phone"></i>
-              </a>
-            </div>
-          </div>
-
-      <!-- Repite para los otros rectángulos -->
+  <!-- Sección de rectángulos -->
+  <div class="rectangles-section">
+    <div *ngFor="let institucion of instituciones" class="rectangle">
+      <!-- Contenido del rectángulo -->
+      <img [src]="'./../../../../../../assets/instituciones/sucre/' + institucion.imagen" alt="{{ institucion.nombre }}">
+      <p class="gray-text">{{ institucion.especialidad }}</p>
+      <h2>{{ institucion.nombre }}</h2>
+      <p></p>
+      <!-- Agrega iconos de redes sociales y teléfono -->
+      <div class="social-icons">
+        <a class="pdf-button modal-link" [href]="institucion.pdfLink" target="_blank">Precios Medicard</a>
+        <a [href]="institucion.facebookLink" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a [href]="institucion.instagramLink" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a [href]="institucion.telefonoLink" target="_blank">
+          <i class="fas fa-phone"></i>
+        </a>
+      </div>
     </div>
   </div>
   

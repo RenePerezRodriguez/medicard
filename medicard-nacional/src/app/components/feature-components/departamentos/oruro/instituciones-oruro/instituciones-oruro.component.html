@@ -1,0 +1,31 @@
+<div class="main-content">
+    <!-- Sección con color sólido -->
+    <div class="solid-section">
+      <h2 class="title" >Conoce Nuestras Instituciones en Oruro</h2>
+      <p>Los mejores descuentos te los ofrece nuestras instituciones</p>
+    </div>
+  
+    <!-- Sección de rectángulos -->
+    <div class="rectangles-section">
+      <div *ngFor="let institucion of instituciones" class="rectangle">
+        <!-- Contenido del rectángulo -->
+        <img [src]="'./../../../../../../assets/instituciones/oruro/' + institucion.imagen" alt="{{ institucion.nombre }}">
+        <p class="gray-text">{{ institucion.especialidad }}</p>
+        <h2>{{ institucion.nombre }}</h2>
+        <p></p>
+        <!-- Agrega iconos de redes sociales y teléfono -->
+        <div class="social-icons">
+          <a class="pdf-button modal-link" [href]="institucion.pdfLink" target="_blank">Precios Medicard</a>
+          <a [href]="institucion.facebookLink" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a [href]="institucion.instagramLink" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a [href]="institucion.telefonoLink" target="_blank">
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    

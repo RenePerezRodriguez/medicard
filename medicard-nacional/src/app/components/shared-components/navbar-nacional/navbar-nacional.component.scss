@@ -1,211 +1,157 @@
-/* Estilos para móviles */
-@media (max-width: 767px) {
-  /* Agrega estilos para pantallas móviles */
+/* Estilos para tabletas y móviles */
+@media (max-width: 1314px) {
   .navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #ffffff;
+    padding: 15px;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: whitesmoke;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-  }
-
-  .navbar img {
-    height: 40px;
-    margin-bottom: 10px;
-  }
-
-  /* Estilos para los select */
-  .navbar select,
-  .trabaja-con-nosotros select {
-    padding: 8px;
-    font-weight: bold;
-    font-size: large;
-    background-color: #EA2729; /* Cambia al tono de rojo asignado */
-    color: #fff;
-    cursor: pointer;
-    appearance: none;
+    width: 70%;
+    padding: 10px;
     border-radius: 8px;
-    height: 39px;
-    margin: 5px 0; /* Espacio entre los selects */
   }
 
-  /* Estilos para las opciones del select */
-  .navbar select option,
-  .trabaja-con-nosotros select option {
-    font-weight: bold;
-    font-size: large;
-    background-color: #fff;
-    color: #fff;
+  .menu li {
+    list-style: none; /* Elimina los puntos redondos de la lista */
+    margin-bottom: 10px; /* Agrega espacio entre elementos del menú */
   }
 
-  /* Cambia el estilo del select cuando se enfoca (selecciona) */
-  .navbar select:focus,
-  .trabaja-con-nosotros select:focus {
-    outline: none;
-    border-color: #42BAC1;
-  }
-
-  .navbar-right {
-    display: flex;
-    flex-direction: row; /* Coloca los elementos uno al lado del otro */
-    align-items: center;
-    justify-content: center; /* Centra horizontalmente los elementos */
-    margin: 10px 0; /* Espacio entre los selects y los botones */
-  }
-
-  .ciudades-registrarse,
-  .trabaja-con-nosotros {
-    display: flex;
-    flex-direction: row; /* Coloca los elementos uno al lado del otro */
-    align-items: center;
-    margin: 10px 0; /* Espacio entre los botones y los selects */
-  }
-
-  /* Estilos para los botones "Usuarios" y "Regístrate" */
-  .a-usuario,
-  .a-usuario-r {
-    background-color: #42BAC1;
-    color: #fff;
-    border: none;
-    padding: 8px 16px; /* Tamaño de los botones ajustado */
-    border-radius: 8px;
-    cursor: pointer;
-    margin: 5px; /* Espacio entre los botones */
-    transition: background-color 0.3s, color 0.3s;
+  .menu a {
     text-decoration: none;
+    color: #333;
     font-weight: bold;
-    font-size: medium; /* Tamaño de fuente ajustado */
-    height: 22px;    
-    display: inline-flex;
-    align-items: center;
+    transition: color 0.3s;
+    position: relative;
+    display: block;
+    padding: 10px 0;
   }
 
-  /* Estilos para los enlaces "Usuarios" y "Regístrate" al pasar el ratón */
-  .a-usuario:hover,
-  .a-usuario-r:hover {
-    background-color: #42BAC1;
-    color: white;
-    border-radius: 8px;
-  }
-}
-
-
-/* Estilos para tabletas */
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* Agrega estilos para pantallas de tabletas */
-
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
+  .menu a::before {
+    content: "";
+    position: absolute;
     width: 100%;
-    padding: 10px 10px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Agrega sombra al navbar */
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .menu a:hover {
+    color: #42BAC1;
+  }
+
+  .menu a:hover::before {
+    transform: scaleX(1);
+    background-color: #42BAC1;
+  }
+
+  .menu > li {
+    position: relative;
+  }
+
+  .menu > li:hover .submenu {
+    display: block;
+  }
+
+  .submenu {
+    position: relative;
+    top: 0;
+    left: 0%;
+    display: none;
+    background-color: #e7282b17;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-  }
-  
-  
-  
-  .navbar img {
-    height: 40px; /* Ajusta el tamaño del logo */
-  }
-  
-  .navbar select {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
     border-radius: 8px;
-    font-weight: bold;
   }
-  
-  .option {
-    color: #000 !important;
+
+  .submenu li {
+    margin: 0;
   }
-  
-  .navbar-right {
-    display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
-    margin-right: 40px;
-    
+
+  .submenu a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
   }
-  
-  .ciudades-registrarse {
-    display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
-    margin-right: 0px; /* Ajusta el margen derecho según desees */
-  }
-  
-  .trabaja-con-nosotros {
-    display: flex;
-    align-items: center;
-    margin-left: 0px; /* Ajusta el margen izquierdo según desees */
-  }
-  
-  /* Estilos para los enlaces "Usuarios" y "Regístrate" */
-  .a-usuario,
-  .a-usuario-r {
+
+  .submenu a:hover {
     background-color: #42BAC1;
     color: #fff;
+  }
+
+  .hamburger-menu {
+    display: block;
+    position: relative;
+    float: right;
+  }
+
+  .hamburger-icon {
+    font-size: 7.5vw;
+    color: #E7282A;
+    cursor: pointer;
+  }
+
+  .menu.active {
+    display: block;
+  }
+
+  .navbar-left {
+    flex-grow: 1;
+  }
+
+  .navbar img {
+    width: 50%;
+    max-width: 400px;
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: -18px;
+  }
+
+  .btn-registrarse,
+  .btn-usuario {
+    background-color: #E7282A;
+    color: #fff;
     border: none;
-    padding: 9px 5px;
+    padding: 8px 16px;
     border-radius: 8px;
     cursor: pointer;
-    margin-left: 10px; /* Ajusta el margen izquierdo según desees */
+    margin-left: 20px;
     transition: background-color 0.3s, color 0.3s;
     text-decoration: none;
     font-weight: bold;
-    height: 30px;
-    display: flex;
-    align-items: center;
+    font-size: 16px;
   }
-  
-  /* Estilos para los enlaces "Usuarios" y "Regístrate" al pasar el ratón */
-  .a-usuario:hover,
-  .a-usuario-r:hover {
-    background-color: #42BAC1; /* Cambia el color de fondo al pasar el ratón */
-    color: white;
-    border-radius: 8px;
+
+  .btn-registrarse:hover,
+  .btn-usuario:hover {
+    background-color: #3CA9B9;
   }
-  
-  /* Estilos para el select en la barra de navegación */
-  .navbar-right select,
-  .trabaja-con-nosotros select {
-    padding: 8px;
-    font-weight: bold;
-    font-size: large;
-    background-color: #EA2729;
-    color: #fff;
-    cursor: pointer;
-    appearance: none; /* Elimina la apariencia predeterminada del select */
-    height: 50px;
-    margin-left: 60px;
-  }
-  
-  /* Estilos para las opciones del select */
-  .navbar-right select option,
-  .trabaja-con-nosotros select option {
-    font-weight: bold;
-    font-size: large;
-    background-color: #fff;
-    color: #fff;
-  }
-  
-  /* Cambia el estilo del select cuando se enfoca (selecciona) */
-  .navbar-right select:focus,
-  .trabaja-con-nosotros select:focus {
-    outline: none;
-    border-color: #42BAC1;
-  }
-  
 }
 
 /* Estilos para PCs */
-@media (min-width: 1024px) {
+@media (min-width: 1315px) {
   /* Agrega estilos para pantallas de PCs */
 
+  .hamburger-menu{
+    display: none;
+  }
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -213,104 +159,135 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 10px 20px;
+    width: calc(100% - 100px); /* Reducir el ancho total en 100px (50px en cada lado) */
+    padding: 10px 50px; /* Agregar relleno de 10px en la parte superior e inferior y 50px en cada lado */
     background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Agrega sombra al navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-  }
-  
-  
-  
-  .navbar img {
-    height: 40px; /* Ajusta el tamaño del logo */
-  }
-  
-  .navbar select {
-    font-size: 16px;
-    padding: 5px;
-    border-radius: 8px;
-  }
-  
-  .option {
-    color: #000 !important;
-  }
-  
-  .navbar-right {
-    display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
-    margin-right: 40px;
-  }
-  
-  .ciudades-registrarse {
-    display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
-    margin-right: 20px; /* Ajusta el margen derecho según desees */
-  }
-  
-  .trabaja-con-nosotros {
+}
+
+.navbar img {
+    height: 40px;
+}
+
+.navbar-left {
     display: flex;
     align-items: center;
-    margin-left: 20px; /* Ajusta el margen izquierdo según desees */
-  }
-  
-  /* Estilos para los enlaces "Usuarios" y "Regístrate" */
-  .a-usuario,
-  .a-usuario-r {
+    margin-right: 10px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.menu a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    color: #42BAC1;
+}
+
+.menu a:hover::before {
+    transform: scaleX(1);
+    background-color: #42BAC1;
+}
+
+.menu > li {
+    position: relative; /* Agrega esta regla para que los submenús estén alineados correctamente */
+}
+
+.menu > li:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.submenu a:hover {
+    background-color: #42BAC1;
+    color: #fff;
+}
+
+.navbar-center {
+    position: relative;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.btn-registrarse,
+.btn-usuario {
     background-color: #42BAC1;
     color: #fff;
     border: none;
-    padding: 9px 5px;
+    padding: 8px 16px;
     border-radius: 8px;
     cursor: pointer;
-    margin-left: 10px; /* Ajusta el margen izquierdo según desees */
+    margin-left: 20px;
     transition: background-color 0.3s, color 0.3s;
     text-decoration: none;
     font-weight: bold;
-    font-size: large;
-    height: 30px;
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Estilos para los enlaces "Usuarios" y "Regístrate" al pasar el ratón */
-  .a-usuario:hover,
-  .a-usuario-r:hover {
-    background-color: #42BAC1; /* Cambia el color de fondo al pasar el ratón */
-    color: white;
-    border-radius: 8px;
-  }
-  
-  /* Estilos para el select en la barra de navegación */
-  .navbar-right select,
-  .trabaja-con-nosotros select {
-    padding: 8px;
-    font-weight: bold;
-    font-size: large;
-    background-color: #EA2729;
-    color: #fff;
-    cursor: pointer;
-    appearance: none; /* Elimina la apariencia predeterminada del select */
-    height: 50px;
-    margin-left: 60px;
-  }
-  
-  /* Estilos para las opciones del select */
-  .navbar-right select option,
-  .trabaja-con-nosotros select option {
-    font-weight: bold;
-    font-size: large;
-    background-color: #fff;
-    color: #fff;
-  }
-  
-  /* Cambia el estilo del select cuando se enfoca (selecciona) */
-  .navbar-right select:focus,
-  .trabaja-con-nosotros select:focus {
-    outline: none;
-    border-color: #42BAC1;
-  }
-  
+    font-size: 16px;
+}
+
+.btn-registrarse:hover,
+.btn-usuario:hover {
+    background-color: #3CA9B9;
+}
+
 }
 
 
