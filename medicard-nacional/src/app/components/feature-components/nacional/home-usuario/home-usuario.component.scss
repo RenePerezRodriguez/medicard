@@ -2,41 +2,31 @@
   /* Estilos para móviles */
   @media (max-width: 767px) {
     /* Agrega estilos para pantallas móviles */
-
-    .home-container {
-      margin: 10px;
+.home-container{
+  padding: 10px;
 }
-
-
 .home-content {
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
+    gap: 20px;
   }
   
   .cream-bg {
+    text-align: center;
     background-color: #E7282A;
     color: whitesmoke !important;
-    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 20px;
   }
   
-  .lilac-bg {
-    background-color: #C5A6E3;
-    //background-color: #44BEC5;
-
-  }
-
-/* Estilos generales para la columna */
-.column {
-  flex: 1;
-  padding: 20px;
-}
 
 .lilac-bg {
-    background: linear-gradient(to bottom, #44BEC5, #44BEC5 50%, white 50%);
+    background: linear-gradient(to bottom, #44BEC5, #44BEC5 50%, rgba(250, 240, 230, 0.356) 50%);
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
+    padding: 20px;
   }
   
   .centered-video {
@@ -51,11 +41,6 @@
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start; /* Alineación a la izquierda */
-  height: 80%; /* Para que ocupe toda la altura de la columna */
-  margin-left: 100px;
-  margin-right: 100px;
 }
 
 
@@ -92,33 +77,8 @@ button {
 }
 
 
-
-
-
-
-.associates-container {
-  max-width: 1000px; /* Ajusta el ancho máximo según tus necesidades */
-  margin: 0 auto; /* Centra la sección horizontalmente */
-  padding: 20px;
-}
-
-.swiper-slide img {
-  width: 200px; /* Ajusta el tamaño de los logos según tus necesidades */
-  height: auto;
-  display: block;
-  margin: 0 auto; /* Centra los logos horizontalmente */
-}
-
-
-
-
-
-
-
 .beneficios-container {
   text-align: center;
-  //max-width: 1300px;
-  margin: 0 auto;
 }
 
 .beneficios-title {
@@ -132,18 +92,15 @@ button {
 }
 
 .beneficios-row {
-  display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
 }
 
 .beneficios-item {
-  width: 48%;
-  margin: 10px;
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #817f7f;
   border-radius: 5px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .beneficios-circle {
@@ -162,11 +119,6 @@ button {
   font-weight: bold;
   margin-bottom: 10px;
 }
-
-.beneficios-list-description {
-}
-  
-  
   }
 
   /* Estilos para tabletas */

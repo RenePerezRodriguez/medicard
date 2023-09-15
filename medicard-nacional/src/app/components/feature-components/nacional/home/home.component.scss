@@ -15,18 +15,19 @@
   /* Estilos para móviles */
   @media (max-width: 767px) {
     /* Agrega estilos para pantallas móviles */
-
+    .container-all {
+      padding: 10px;
+    }
     /* Estilos generales */
 .container {
   display: flex;
   flex-direction: column; /* Cambia a dirección de columna */
   align-items: center; /* Centra los elementos verticalmente */
-  margin-top: 80px;
+  gap: 20px;
 }
 
 .video-container {
   position: relative;
-  max-width: 96%;
   overflow: hidden;
 }
 
@@ -40,7 +41,6 @@ video {
   display: flex;
   flex-direction: column; /* Cambia a dirección de columna */
   align-items: center; /* Centra los elementos verticalmente */
-  padding: 30px;
 }
 
 .title {
@@ -59,21 +59,8 @@ video {
   padding: 20px;
   border-radius: 10px;
   color: black;
-  width: 100%;
   position: relative;
-  text-align: left;
   background-color: #EA2729;
-}
-
-.rounded-box::before {
-  content: "";
-  position: absolute;
-  right: -10px;
-  top: 0;
-  width: 20px;
-  height: 100%;
-  border-radius: 10px 0 0 10px;
-  background-color: #F4F4F4;
 }
 
 .red {
@@ -90,22 +77,20 @@ video {
   flex-direction: column; /* Cambia la dirección a columna en dispositivos móviles */
   justify-content: center; /* Centra verticalmente los elementos */
   align-items: center; /* Centra horizontalmente los elementos */
-  margin-top: 50px;
   animation: fadeInUp 1s ease-in-out;
 }
 
 .descuento-item {
-  width: 90%; /* Haz que los elementos ocupen todo el ancho */
   margin: 20px 0; /* Añade margen arriba y abajo para separar los elementos */
 }
 
 /* Resto de los estilos se mantienen igual */
 .descuento-item:nth-child(odd) {
-  background-color: #EA2729;
+  background-color: #42BAC1;
 }
 
 .descuento-item:nth-child(even) {
-  background-color: #42BAC1;
+  background-color: #EA2729;
 }
 
 .descuento-item .title {
@@ -138,14 +123,11 @@ video {
 
 /* Sección "Sobre Nosotros" */
 .about-section {
-  padding: 13px;
-  margin-top: 50px; /* Reduce el margen superior para ajustar la posición del rectángulo rojo */
   animation: fadeInUp 1s ease-in-out;
 }
 
 .about-content {
   display: flex;
-  margin-top: 200px;
   flex-direction: column; /* Cambia la dirección a columna y pone blue debajo de red */
   align-items: center;
   gap: 10px;
@@ -154,7 +136,6 @@ video {
 .red-rectangle {
   position: relative;
   background-color: #EA2729;
-  width: 94%; /* Haz que ocupe todo el ancho disponible */
   height: auto;
   border-radius: 10px;
   padding: 20px;
@@ -176,19 +157,20 @@ video {
 }
 
 .red-image {
-  position: absolute;
-  top: -300px;
-  right: 100px;
-  max-width: 500px;
+  max-width: 300px;
+  margin-bottom: -20px;
   z-index: -99;
 }
 
 .blue-rectangle {
   background-color: #42BAC1; /* Cambia el color de fondo */
-  width: 94%; /* Haz que ocupe todo el ancho disponible */
   color: whitesmoke;
   border-radius: 10px;
   padding: 20px;
+}
+
+.blue-rectangle img{
+ max-width: 350px;
 
 }
 
@@ -205,12 +187,12 @@ video {
   align-items: flex-start;
   flex-wrap: wrap;
   margin-top: 20px;
+  gap: 20px;
 }
 
 .mvh-item {
   flex: 1;
   text-align: center;
-  margin: 20px;
   border: 0px solid #42BAC1;
   border-radius: 10px;
   padding: 20px;
@@ -257,18 +239,21 @@ video {
   /* Estilos para tabletas */
   @media (min-width: 768px) and (max-width: 1023px) {
     /* Agrega estilos para pantallas de tabletas */
- 
+
+     /* Agrega estilos para pantallas móviles */
+     .container-all {
+      padding: 10px;
+    }
     /* Estilos generales */
 .container {
   display: flex;
   flex-direction: column; /* Cambia a dirección de columna */
   align-items: center; /* Centra los elementos verticalmente */
-  margin-top: 80px;
+  gap: 20px;
 }
 
 .video-container {
   position: relative;
-  max-width: 96%;
   overflow: hidden;
 }
 
@@ -282,7 +267,6 @@ video {
   display: flex;
   flex-direction: column; /* Cambia a dirección de columna */
   align-items: center; /* Centra los elementos verticalmente */
-  padding: 30px;
 }
 
 .title {
@@ -301,21 +285,8 @@ video {
   padding: 20px;
   border-radius: 10px;
   color: black;
-  width: 100%;
   position: relative;
-  text-align: left;
   background-color: #EA2729;
-}
-
-.rounded-box::before {
-  content: "";
-  position: absolute;
-  right: -10px;
-  top: 0;
-  width: 20px;
-  height: 100%;
-  border-radius: 10px 0 0 10px;
-  background-color: #F4F4F4;
 }
 
 .red {
@@ -332,22 +303,20 @@ video {
   flex-direction: column; /* Cambia la dirección a columna en dispositivos móviles */
   justify-content: center; /* Centra verticalmente los elementos */
   align-items: center; /* Centra horizontalmente los elementos */
-  margin-top: 50px;
   animation: fadeInUp 1s ease-in-out;
 }
 
 .descuento-item {
-  width: 90%; /* Haz que los elementos ocupen todo el ancho */
   margin: 20px 0; /* Añade margen arriba y abajo para separar los elementos */
 }
 
 /* Resto de los estilos se mantienen igual */
 .descuento-item:nth-child(odd) {
-  background-color: #EA2729;
+  background-color: #42BAC1;
 }
 
 .descuento-item:nth-child(even) {
-  background-color: #42BAC1;
+  background-color: #EA2729;
 }
 
 .descuento-item .title {
@@ -380,14 +349,11 @@ video {
 
 /* Sección "Sobre Nosotros" */
 .about-section {
-  padding: 13px;
-  margin-top: 50px; /* Reduce el margen superior para ajustar la posición del rectángulo rojo */
   animation: fadeInUp 1s ease-in-out;
 }
 
 .about-content {
   display: flex;
-  margin-top: 200px;
   flex-direction: column; /* Cambia la dirección a columna y pone blue debajo de red */
   align-items: center;
   gap: 10px;
@@ -396,7 +362,6 @@ video {
 .red-rectangle {
   position: relative;
   background-color: #EA2729;
-  width: 94%; /* Haz que ocupe todo el ancho disponible */
   height: auto;
   border-radius: 10px;
   padding: 20px;
@@ -406,20 +371,32 @@ video {
   margin-bottom: 20px; /* Agrega margen inferior para separar de blue */
 }
 
+.red-rectangle h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white; /* Cambia el color del título */
+}
+
+.red-rectangle p {
+  font-size: 16px;
+}
+
 .red-image {
-  position: absolute;
-  top: -300px;
-  right: 100px;
-  max-width: 500px;
+  max-width: 300px;
+  margin-bottom: -20px;
   z-index: -99;
 }
 
 .blue-rectangle {
   background-color: #42BAC1; /* Cambia el color de fondo */
-  width: 94%; /* Haz que ocupe todo el ancho disponible */
   color: whitesmoke;
   border-radius: 10px;
   padding: 20px;
+}
+
+.blue-rectangle img{
+ max-width: 350px;
 
 }
 
@@ -436,19 +413,18 @@ video {
   align-items: flex-start;
   flex-wrap: wrap;
   margin-top: 20px;
+  gap: 20px;
 }
 
 .mvh-item {
   flex: 1;
   text-align: center;
-  margin: 20px;
   border: 0px solid #42BAC1;
   border-radius: 10px;
   padding: 20px;
   transition: transform 0.3s;
   animation: fadeInUp 1s ease-in-out;
   color: whitesmoke;
-  height: 350px;
   max-height: auto;
 }
 
@@ -605,7 +581,7 @@ video {
 /* Sección "Sobre Nosotros" */
 .about-section {
   padding: 13px;
-  margin-top: 150px;
+  margin-top: 220px;
   animation: fadeInUp 1s ease-in-out;
 }
 
@@ -631,9 +607,7 @@ video {
 
 .red-image {
   position: absolute;
-  top: -300px;
-  right: 100px;
-  max-width: 500px;
+  margin-bottom: 530px;
   z-index: -99;
 }
 
