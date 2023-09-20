@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-instituciones-elalto',
   templateUrl: './instituciones-elalto.component.html',
-  styleUrls: ['./instituciones-elalto.component.scss']
+  styleUrls: ['./../../cochabamba/instituciones/instituciones.component.scss']
 })
 export class InstitucionesElaltoComponent {
 

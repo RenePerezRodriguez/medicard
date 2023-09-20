@@ -3,6 +3,13 @@
   height: auto;
 }
 
+.rectangle img {
+  width: 100%; /* Las imágenes ocuparán todo el ancho del contenedor */
+  max-height: 200px; /* Establece una altura máxima para las imágenes */
+  max-width: 200px; /* Establece una altura máxima para las imágenes */
+  object-fit: contain; /* Escala y recorta la imagen para que llene el contenedor sin deformación */
+}
+
 .title {
   font-size: 40px;
   font-weight: bold;

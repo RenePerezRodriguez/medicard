@@ -9,6 +9,8 @@ import { InstitucionesSantacruzComponent } from './components/feature-components
 import { InstitucionesLapazComponent } from './components/feature-components/departamentos/lapaz/instituciones-lapaz/instituciones-lapaz.component';
 import { InstitucionesOruroComponent } from './components/feature-components/departamentos/oruro/instituciones-oruro/instituciones-oruro.component';
 import { InstitucionesElaltoComponent } from './components/feature-components/departamentos/elalto/instituciones-elalto/instituciones-elalto.component';
+import { TrabajaconnosotrosComponent } from './components/feature-components/departamentos/cochabamba/trabajaconnosotros/trabajaconnosotros.component';
+import { ContactanosComponent } from './components/feature-components/departamentos/cochabamba/contactanos/contactanos.component';
 
 
 //Guards
@@ -28,6 +30,10 @@ const routes: Routes = [
   { path: 'instituciones-oruro', component: InstitucionesOruroComponent },
   { path: 'instituciones-sucre', component: InstitucionesSucreComponent },
   { path: 'instituciones-elalto', component: InstitucionesElaltoComponent },
+
+  { path: 'trabaja-con-nosotros', component: TrabajaconnosotrosComponent },
+  { path: 'contacto', component: ContactanosComponent },
+
 
   { path: 'registro-usuario', component: RegistroUsuarioComponent },
   //RUTAS ADMINISTRADOR

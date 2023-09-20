@@ -1,0 +1,49 @@
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+  }
+  
+  .contact-left {
+    flex: 3; /* Ocupa tres veces más espacio que la columna derecha */
+    text-align: left; /* Alinea el contenido de .contact-left a la izquierda */
+  }
+  
+  .contact-right {
+    flex: 1; /* Ocupa un tercio del espacio de la columna izquierda */
+    text-align: left; /* Alinea el contenido de .contact-right a la derecha */
+}
+  
+  .contact-left h3,
+  .contact-right h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info {
+    margin-bottom: 20px;
+  }
+  
+  .contact-info h3 {
+    font-size: 18px;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  .contact-container {
+    text-align: center;
+    padding: 40px;
+    margin-right: auto; /* Alinea el contenido al centro horizontalmente */
+    margin-left: auto; /* Alinea el contenido al centro horizontalmente */
+    max-width: 1200px; /* Limita el ancho máximo del contenido */
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  

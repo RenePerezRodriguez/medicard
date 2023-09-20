@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-instituciones-oruro',
   templateUrl: './instituciones-oruro.component.html',
-  styleUrls: ['./instituciones-oruro.component.scss']
+  styleUrls: ['./../../cochabamba/instituciones/instituciones.component.scss']
 })
 export class InstitucionesOruroComponent {
 

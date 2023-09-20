@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-instituciones-lapaz',
   templateUrl: './instituciones-lapaz.component.html',
-  styleUrls: ['./instituciones-lapaz.component.scss']
+  styleUrls: ['./../../cochabamba/instituciones/instituciones.component.scss']
 })
 export class InstitucionesLapazComponent {
 
@@ -18,10 +18,10 @@ export class InstitucionesLapazComponent {
       telefonoLink: 'https://wa.me/77484800'
     },
     {
-      nombre: 'Hospital Arco iris',
+      nombre: 'Hospital Arcoiris',
       especialidad: 'Hospital',
       imagen: 'Arcoiris.jpg',
-      pdfLink: 'https://medicard.com.bo/archivos/areamedica.pdf',
+      pdfLink: 'https://medicard.com.bo/archivos/lapaz/Arcoiris.pdf',
       facebookLink: 'https://www.facebook.com/CAO-Cl%C3%ADnica-123456789',
       instagramLink: 'https://www.instagram.com/caoclinica',
       telefonoLink: 'https://wa.me/77484800'
@@ -30,7 +30,7 @@ export class InstitucionesLapazComponent {
       nombre: 'Oncoclinic',
       especialidad: 'Clínica',
       imagen: 'Oncoclinic.jpg',
-      pdfLink: 'https://medicard.com.bo/archivos/areamedica.pdf',
+      pdfLink: 'https://medicard.com.bo/archivos/lapaz/ONCOCLINIC.pdf',
       facebookLink: 'https://www.facebook.com/CAO-Cl%C3%ADnica-123456789',
       instagramLink: 'https://www.instagram.com/caoclinica',
       telefonoLink: 'https://wa.me/77484800'
@@ -39,15 +39,6 @@ export class InstitucionesLapazComponent {
       nombre: 'Oncoservice ',
       especialidad: 'Clínica',
       imagen: 'Oncoservice.jpg',
-      pdfLink: 'https://medicard.com.bo/archivos/areamedica.pdf',
-      facebookLink: 'https://www.facebook.com/CAO-Cl%C3%ADnica-123456789',
-      instagramLink: 'https://www.instagram.com/caoclinica',
-      telefonoLink: 'https://wa.me/77484800'
-    },
-    {
-      nombre: 'Cielomedic',
-      especialidad: 'Clínica',
-      imagen: 'Cielomedic.jpg',
       pdfLink: 'https://medicard.com.bo/archivos/areamedica.pdf',
       facebookLink: 'https://www.facebook.com/CAO-Cl%C3%ADnica-123456789',
       instagramLink: 'https://www.instagram.com/caoclinica',
