@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-instituciones-santacruz',
   templateUrl: './instituciones-santacruz.component.html',
-  styleUrls: ['./instituciones-santacruz.component.scss']
+  styleUrls: ['./../../cochabamba/instituciones/instituciones.component.scss']
 })
 export class InstitucionesSantacruzComponent {
 
@@ -12,7 +12,7 @@ export class InstitucionesSantacruzComponent {
       nombre: 'Área médica',
       especialidad: 'Clínica',
       imagen: 'areamedica.jpg',
-      pdfLink: 'https://medicard.com.bo/archivos/areamedica.pdf',
+      pdfLink: 'https://medicard.com.bo/archivos/santacruz/areamedica.pdf',
       facebookLink: 'https://www.facebook.com/CAO-Cl%C3%ADnica-123456789',
       instagramLink: 'https://www.instagram.com/caoclinica',
       telefonoLink: 'https://wa.me/77484800'
@@ -20,29 +20,22 @@ export class InstitucionesSantacruzComponent {
     {
       nombre: 'Bio cell',
       especialidad: 'Laboratorio',
+      direccion: 'Av. Cañoto#700 esquina Mario Flores',
       imagen: 'bio-cell.jpg',
-      pdfLink: 'https://medicard.com.bo/archivos/areamedica.pdf',
+      pdfLink: 'https://medicard.com.bo/archivos/santacruz/bio-cell.pdf',
       facebookLink: 'https://www.facebook.com/CAO-Cl%C3%ADnica-123456789',
       instagramLink: 'https://www.instagram.com/caoclinica',
-      telefonoLink: 'https://wa.me/77484800'
+      telefonoLink: 'https://wa.me/78004706'
     },
     {
       nombre: 'Cio medic',
       especialidad: 'Clínica',
+      direccion: 'Obidio barbery entre 2do u 3er anillo calle placido mendez #14 ',
       imagen: 'ciomedic.jpg',
-      pdfLink: 'https://medicard.com.bo/archivos/areamedica.pdf',
+      pdfLink: 'https://medicard.com.bo/archivos/santacruz/ciomedic.pdf',
       facebookLink: 'https://www.facebook.com/CAO-Cl%C3%ADnica-123456789',
       instagramLink: 'https://www.instagram.com/caoclinica',
-      telefonoLink: 'https://wa.me/77484800'
-    },
-    {
-      nombre: 'Ha medic',
-      especialidad: 'Clínica',
-      imagen: 'los-lirios.jpg',
-      pdfLink: 'https://medicard.com.bo/archivos/areamedica.pdf',
-      facebookLink: 'https://www.facebook.com/CAO-Cl%C3%ADnica-123456789',
-      instagramLink: 'https://www.instagram.com/caoclinica',
-      telefonoLink: 'https://wa.me/77484800'
+      telefonoLink: 'tel:3218494'
     },
     {
       nombre: 'Mesocruz',
@@ -54,67 +47,54 @@ export class InstitucionesSantacruzComponent {
       telefonoLink: 'https://wa.me/77484800'
     },
     {
-      nombre: 'Neurocenter',
-      especialidad: 'Clínica',
-      imagen: 'los-lirios.jpg',
-      pdfLink: 'https://medicard.com.bo/archivos/areamedica.pdf',
-      facebookLink: 'https://www.facebook.com/CAO-Cl%C3%ADnica-123456789',
-      instagramLink: 'https://www.instagram.com/caoclinica',
-      telefonoLink: 'https://wa.me/77484800'
-    },
-    {
       nombre: 'Clínica Figueroa',
       especialidad: 'Clínica',
-      imagen: 'ClínicaFigueroa.jpg',
-      pdfLink: 'https://medicard.com.bo/archivos/areamedica.pdf',
+      direccion: 'Av. Mutualista esquina c/44',
+      imagen: 'ClinicaFigueroa.jpg',
+      pdfLink: 'https://medicard.com.bo/archivos/santacruz/ClínicaFigueroa.pdf',
       facebookLink: 'https://www.facebook.com/CAO-Cl%C3%ADnica-123456789',
       instagramLink: 'https://www.instagram.com/caoclinica',
-      telefonoLink: 'https://wa.me/77484800'
+      telefonoLink: 'tel:3483929'
     },
     {
       nombre: 'Clínica Melendres',
       especialidad: 'Clínica',
-      imagen: 'ClínicaMelendres.jpg',
-      pdfLink: 'https://medicard.com.bo/archivos/areamedica.pdf',
+      direccion: 'Doble via la guardia entre  2do y 3er anillo ',
+      imagen: 'ClinicaMelendres.jpg',
+      pdfLink: 'https://medicard.com.bo/archivos/santacruz/ClínicaMelendres.pdf',
       facebookLink: 'https://www.facebook.com/CAO-Cl%C3%ADnica-123456789',
       instagramLink: 'https://www.instagram.com/caoclinica',
-      telefonoLink: 'https://wa.me/77484800'
+      telefonoLink: 'https://wa.me/76320012'
     },
     {
-      nombre: 'Clínica Urbarí',
+      nombre: 'Neuro Center',
       especialidad: 'Clínica',
-      imagen: 'los-lirios.jpg',
-      pdfLink: 'https://medicard.com.bo/archivos/areamedica.pdf',
+      direccion: 'Av.Cristo redentor # 3730 entre 4to y 5to anillo',
+      imagen: 'medicalcenter.jpg',
+      pdfLink: 'https://medicard.com.bo/archivos/santacruz/medicalcenter.pdf',
       facebookLink: 'https://www.facebook.com/CAO-Cl%C3%ADnica-123456789',
       instagramLink: 'https://www.instagram.com/caoclinica',
-      telefonoLink: 'https://wa.me/77484800'
+      telefonoLink: 'tel:50850170'
     },
     {
       nombre: 'Clínica Incor',
       especialidad: 'Clínica',
-      imagen: 'ClínicaIncor.jpg',
-      pdfLink: 'https://medicard.com.bo/archivos/areamedica.pdf',
+      direccion: '2do anillo av. 26 de febrero entre av Roca y Coronado y Av piraí',
+      imagen: 'ClinicaIncor.jpg',
+      pdfLink: 'https://medicard.com.bo/archivos/santacruz/ClínicaIncor.pdf',
       facebookLink: 'https://www.facebook.com/CAO-Cl%C3%ADnica-123456789',
       instagramLink: 'https://www.instagram.com/caoclinica',
-      telefonoLink: 'https://wa.me/77484800'
-    },
-    {
-      nombre: 'Clínica Rengel',
-      especialidad: 'Clínica',
-      imagen: 'los-lirios.jpg',
-      pdfLink: 'https://medicard.com.bo/archivos/areamedica.pdf',
-      facebookLink: 'https://www.facebook.com/CAO-Cl%C3%ADnica-123456789',
-      instagramLink: 'https://www.instagram.com/caoclinica',
-      telefonoLink: 'https://wa.me/77484800'
+      telefonoLink: 'tel:3520444'
     },
     {
       nombre: 'Praxis Santa Cruz',
       especialidad: 'Clínica',
+      direccion: 'Canal isuto entre 3er y 4to anillo entre Gilberto Molina t R. San Galvarro Calle Republiquetas esq. Oruro #686',
       imagen: 'Praxis.jpeg',
-      pdfLink: 'https://medicard.com.bo/archivos/areamedica.pdf',
+      pdfLink: 'https://medicard.com.bo/archivos/santacruz/Praxis.pdf',
       facebookLink: 'https://www.facebook.com/CAO-Cl%C3%ADnica-123456789',
       instagramLink: 'https://www.instagram.com/caoclinica',
-      telefonoLink: 'https://wa.me/77484800'
+      telefonoLink: 'https://wa.me/70793117'
     },
     
   ];

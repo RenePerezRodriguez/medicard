@@ -12,7 +12,7 @@
         <img [src]="'./../../../../../../assets/instituciones/santacruz/' + institucion.imagen" alt="{{ institucion.nombre }}">
         <p class="gray-text">{{ institucion.especialidad }}</p>
         <h2>{{ institucion.nombre }}</h2>
-        <p></p>
+        <p>{{institucion.direccion}}</p>
         <!-- Agrega iconos de redes sociales y teléfono -->
         <div class="social-icons">
           <a class="pdf-button modal-link" [href]="institucion.pdfLink" target="_blank">Precios Medicard</a>

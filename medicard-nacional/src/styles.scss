@@ -13,35 +13,36 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Tamaños de fuente para encabezados */
 h1 {
-  font-size: 56px;
+  font-size: 36px; /* Reducido de 46px */
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 32px; /* Reducido de 38px */
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 28px; /* Reducido de 30px */
 }
 
 h4 {
-  font-size: 32px;
+  font-size: 24px; /* Reducido de 22px */
 }
 
 h5 {
-  font-size: 28px;
+  font-size: 20px; /* Reducido de 18px */
 }
 
 h6 {
-  font-size: 24px;
+  font-size: 18px; /* Reducido de 24px */
 }
 
 /* Fuente para párrafos y contenido del cuerpo */
 p {
   font-family: 'IBM Sans', Arial, sans-serif;
-  font-size: 20px;
+  font-size: 18px; /* Reducido de 25px */
   line-height: 1.6; /* Espaciado entre líneas */
 }
+
 
 /* Tamaño de fuente para botones */
 button, .button {

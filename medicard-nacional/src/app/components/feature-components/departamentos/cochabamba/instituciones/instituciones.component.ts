@@ -71,15 +71,6 @@ export class InstitucionesComponent {
       telefonoLink: 'https://wa.me/77484800'
     },
     {
-      nombre: 'Medicard',
-      especialidad: 'Clinica',
-      imagen: 'medicard.jpg',
-      pdfLink: 'https://medicard.com.bo/archivos/medicard.pdf',
-      facebookLink: 'https://www.facebook.com/CAO-Cl%C3%ADnica-123456789',
-      instagramLink: 'https://www.instagram.com/caoclinica',
-      telefonoLink: 'https://wa.me/77484800'
-    },
-    {
       nombre: 'Único',
       especialidad: 'Servicios oftalmológicos',
       imagen: 'Único.jpg',
@@ -111,15 +102,6 @@ export class InstitucionesComponent {
       especialidad: 'Clinica',
       imagen: 'HarryWilliams.jpeg',
       pdfLink: 'https://medicard.com.bo/archivos/HarryWilliams.pdf',
-      facebookLink: 'https://www.facebook.com/CAO-Cl%C3%ADnica-123456789',
-      instagramLink: 'https://www.instagram.com/caoclinica',
-      telefonoLink: 'https://wa.me/77484800'
-    },
-    {
-      nombre: 'Farmacia Medicard',
-      especialidad: 'Farmacia',
-      imagen: 'FarmaciaMedicard.jpeg',
-      pdfLink: 'https://medicard.com.bo/archivos/FarmaciaMedicard.pdf',
       facebookLink: 'https://www.facebook.com/CAO-Cl%C3%ADnica-123456789',
       instagramLink: 'https://www.instagram.com/caoclinica',
       telefonoLink: 'https://wa.me/77484800'
