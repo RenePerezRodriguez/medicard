@@ -1,5 +1,13 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+import { AddTokenInterceptor } from './utils/add-token.interceptor';
+//import para la integracion Frontend- Backend
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +24,12 @@ import { InstitucionesOruroComponent } from './components/feature-components/dep
 import { InstitucionesElaltoComponent } from './components/feature-components/departamentos/elalto/instituciones-elalto/instituciones-elalto.component';
 import { ContactanosComponent } from './components/feature-components/departamentos/cochabamba/contactanos/contactanos.component';
 import { TrabajaconnosotrosComponent } from './components/feature-components/departamentos/cochabamba/trabajaconnosotros/trabajaconnosotros.component';
+import { CreateUserComponent } from './components/feature-components/administradores/create-user/create-user.component';
+import { ListUsersComponent } from './components/feature-components/administradores/list-users/list-users.component';
+import { LoginComponent } from './components/feature-components/administradores/login/login.component';
+import { SuperUserComponent } from './components/feature-components/administradores/super-user/super-user.component';
+
+
 
 @NgModule({
   declarations: [
@@ -32,13 +46,30 @@ import { TrabajaconnosotrosComponent } from './components/feature-components/dep
     InstitucionesOruroComponent,
     InstitucionesElaltoComponent,
     ContactanosComponent,
-    TrabajaconnosotrosComponent
+    TrabajaconnosotrosComponent,
+    CreateUserComponent,
+    ListUsersComponent,
+    LoginComponent,
+    SuperUserComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      timeOut: 3000,
+      positionClass: 'toast-middle-center',
+      preventDuplicates: true,
+      progressAnimation: 'increasing',
+    }),
+    HttpClientModule,
+    FormsModule,
+    NgxPaginationModule,
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: AddTokenInterceptor, multi: true }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -10,6 +10,14 @@ import { InstitucionesLapazComponent } from './components/feature-components/dep
 import { InstitucionesOruroComponent } from './components/feature-components/departamentos/oruro/instituciones-oruro/instituciones-oruro.component';
 import { InstitucionesElaltoComponent } from './components/feature-components/departamentos/elalto/instituciones-elalto/instituciones-elalto.component';
 
+
+//Guards
+import { AuthGuard } from './utils/auth.guard';
+import { LoginComponent } from './components/feature-components/administradores/login/login.component';
+import { CreateUserComponent } from './components/feature-components/administradores/create-user/create-user.component';
+import { ListUsersComponent } from './components/feature-components/administradores/list-users/list-users.component';
+import { SuperUserComponent } from './components/feature-components/administradores/super-user/super-user.component';
+
 const routes: Routes = [
   { path: '', component: HomeComponent }, // Ruta para la página de inicio
   { path: 'home-usuario', component: HomeUsuarioComponent }, // Ruta para la página home de usuario
@@ -22,9 +30,18 @@ const routes: Routes = [
   { path: 'instituciones-elalto', component: InstitucionesElaltoComponent },
 
   { path: 'registro-usuario', component: RegistroUsuarioComponent },
-
-
-
+  //RUTAS ADMINISTRADOR
+  { path: 'login', component: LoginComponent },
+  //Ruta para ADMIN_ROLE
+  { path: 'list-users', component: ListUsersComponent, canActivate: [AuthGuard] },
+  //RUTA PARA SUPER_ROLE
+  { path: 'super-user', component: SuperUserComponent, canActivate: [AuthGuard] },
+  { path: 'create-user', component: CreateUserComponent},
+  { path: 'edit-user/:id', component: CreateUserComponent},
+  //ruta para actualizar la fecha de activacion
+  { path: 'asegurados/:id/update-activation', component: SuperUserComponent},
+  // si pones link erroneo te redirige INICIO
+  { path: '**', redirectTo: '', pathMatch: 'full'},
 ];
 
 @NgModule({

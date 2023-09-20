@@ -1,0 +1,66 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<div class="container mt-5">
+    <div class="row" class="text-center align-middle">
+      <div class="col-12 col-lg-10 offset-lg-1">
+        <div class="card">
+          <div class="card-header text-center">
+            <button class="btn btn-danger float-lg-end" (click)="logOut()">Salir de su cuenta</button>
+            <span class="titulo">LISTA DE ASEGURADOS</span>
+            <div class="button-container">
+              <button class="btn btn-success float-lg-end " routerLink="/create-user">Nuevo Asegurado</button>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="form-group mt-3">
+              <input [(ngModel)]="searchTerm" (keyup)="searchUser()" type="text" class="form-control mb-3"
+                placeholder="Buscar por nombre, apellido o CI">
+            </div>
+            <div class="table-responsive">
+              <table *ngIf="listUsers.length > 0" class="table table-dark table-striped table-bordered mt-3">
+                <thead>
+                  <tr class="text-center align-middle">
+                    <th scope="col">C.I.</th>
+                    <th scope="col">Nombres</th>
+                    <th scope="col">Apellidos</th>
+                    <th scope="col">Fecha de Nacimiento</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">Celular</th>
+                    <th scope="col">Ciudad</th>
+                    <th scope="col">Codigo</th>
+                    <th scope="col">Fecha de Activación</th>
+                    <th scope="col">restantes</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="text-center align-middle" *ngFor="let user of listUsers | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPage, totalItems: listUsers.length }">
+                    <td>{{ user.ci }}</td>
+                    <td>{{ user.nombres }}</td>
+                    <td>{{ user.apellidos }}</td>
+                    <td>{{ user.fecha_nacimiento }}</td>
+                    <td>{{ user.sexo }}</td>
+                    <td>{{ user.telefono }}</td>
+                    <td>{{ user.ciudad }}</td>
+                    <td>{{ user.codigo }}</td>
+                    <td>{{ user.fecha_activacion|date:"dd-MM-Y" }}</td>
+                    <td>{{ user.diasRestantes }}</td>
+                    <td>
+                      
+                      <i (click)="deleteUser(user.ci)" class="fa-solid fa-trash text-danger"></i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <pagination-controls (pageChange)="currentPage = $event" previousLabel="Anterior" nextLabel="Siguiente"
+                class="my-pagination"></pagination-controls>
+              <h5 style="text-align: start; margin-top: 10px;" *ngIf="listUsers.length == 0">No hay asegurados para
+                mostrar</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
