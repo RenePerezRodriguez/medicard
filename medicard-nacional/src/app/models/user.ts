@@ -11,9 +11,9 @@ export class User {
     fecha_activacion: Date;
     userName: string;
     password: string;
-    diasRestantes: string;
+    dias_restantes: string;
     
-    constructor(diasRestantes:string, id: string, ci: string, nombres: string, apellidos: string, fecha_nacimiento: Date, sexo: string, telefono: string, ciudad: string,  codigo: string, fecha_activacion: Date, userName: string, password: string,){
+    constructor(dias_restantes:string, id: string, ci: string, nombres: string, apellidos: string, fecha_nacimiento: Date, sexo: string, telefono: string, ciudad: string,  codigo: string, fecha_activacion: Date, userName: string, password: string,){
         this.id = id;
         this.ci = ci;
         this.nombres = nombres;
@@ -26,7 +26,7 @@ export class User {
         this.fecha_activacion = fecha_activacion;
         this.userName = userName;
         this.password = password;
-        this.diasRestantes = diasRestantes;
+        this.dias_restantes = dias_restantes;
     }
 }
 export interface ActivateUser {

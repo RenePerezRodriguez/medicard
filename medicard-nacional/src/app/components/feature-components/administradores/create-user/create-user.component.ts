@@ -82,7 +82,7 @@ export class CreateUserComponent implements OnInit {
       fecha_activacion: this.userForm.get('fecha_activacion')?.value,
       userName: this.userForm.get('userName')?.value,
       password: this.userForm.get('password')?.value,
-      diasRestantes: this.userForm.get('diasRestantes')?.value,
+      dias_restantes: this.userForm.get('diasRestantes')?.value,
       //rol: this.userForm.get('rol')?.value,
 
     }

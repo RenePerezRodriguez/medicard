@@ -8,14 +8,14 @@
     background-repeat: no-repeat;
     /*height: 600px;*/
   }
-  
+  /*cambiar de left a right en el produccion*/
   .card {
     margin-top: -100px;
    /*background: hsla(0, 16%, 35%, 0.8);
     //background: hsla(0, 31%, 54%, 0.8); */
     background: #43C6AC;  /* fallback for old browsers */
-      background: -webkit-linear-gradient(to left, #ED213A, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to left, #ED213A, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: -webkit-linear-gradient(to right, #ED213A, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #ED213A, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     backdrop-filter: blur(30px);
     max-width: 350px;
   }
